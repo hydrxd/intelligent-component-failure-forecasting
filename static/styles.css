@@ -1,0 +1,35 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.main-text {
+    font-size: 40px; /* Large text size */
+    font-weight: bold;
+    margin: 0;
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(193,45,253,1) 100%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sub-text {
+    font-size: 24px; /* Smaller subtext size */
+    margin: 10px 0 0;
+}
+.bottom-image {
+    position: absolute;
+    bottom: 0; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%; /* Adjust the width as needed */
+}

@@ -1,0 +1,111 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 20px;
+    }
+    h1 {
+        color: white;
+        text-align: center;
+        font-weight: bold;
+    }
+    form {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        width: 550px;
+    }
+    label {
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: block;
+    }
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+        background-color: #0056b3;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    input[type="submit"]:hover {
+        background-color: #004494;
+    }
+    .plot {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .plot img {
+        max-width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .fix-box {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        text-align: center;
+    }
+    .fix-box p {
+        margin: 10px 0;
+        color: black;
+    }
+    .fix-box strong {
+        font-weight: bold;
+    }
+</style>
+
+<div class="container">
+    <h1>Machine Anomaly Detection<br><br></h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="feature">Select Feature:</label>
+        <select name="feature" id="feature" required>
+            {% for i in range(1,14) %}
+                <option value="{{ feature_columns[i] }}">{{ feature_columns[i] }}</option>
+            {% endfor %}
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if plot_url %}
+        <div class="plot">
+            <img src="data:image/png;base64,{{ plot_url }}" alt="Plot">
+        </div>
+        <div class="fix-box">
+            <p>{{ abnormal_sentence }}</p>
+            <p><strong>Possible fix:</strong> {{ fix_sentence }}</p>
+        </div>
+    {% endif %}
+</div>
+
+{% endblock %}

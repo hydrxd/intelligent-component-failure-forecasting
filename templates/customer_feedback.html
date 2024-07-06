@@ -1,0 +1,179 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <style>
+        .wrapper {
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #chat {
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        select, input, textarea, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+    <script>
+        var socket = io();
+        var feedback = {};
+
+        function startChat() {
+            document.getElementById('chat').innerHTML = `
+                <p>Feedback for Machine</p>
+                <select id="machine_id">
+                    <option value="Articulated Truck">Articulated Truck</option>
+                    <option value="Asphalt Paver">Asphalt Paver</option>
+                    <option value="Backhoe Loader">Backhoe Loader</option>
+                    <option value="Dozer">Dozer</option>
+                    <option value="Excavator">Excavator</option>
+                </select>
+                <button onclick="submitMachineId()">Submit</button>
+            `;
+        }
+
+        function submitMachineId() {
+            var machineId = document.getElementById('machine_id').value;
+            feedback.machine_id = machineId;
+            document.getElementById('chat').innerHTML = `
+                <p>On a scale of 1-10, how would you rate the machine's performance?</p>
+                <input type="number" id="performance" min="1" max="10" />
+                <button onclick="submitPerformance()">Submit</button>
+            `;
+        }
+
+        function submitPerformance() {
+            var performance = document.getElementById('performance').value;
+            feedback.performance = performance;
+            document.getElementById('chat').innerHTML = `
+                <p>What is the power usage of the machine?</p>
+                <select id="power_usage">
+                    <option value="Low">Low</option>
+                    <option value="Normal">Normal</option>
+                    <option value="High">High</option>
+                </select>
+                <button onclick="submitPowerUsage()">Submit</button>
+            `;
+        }
+
+        function submitPowerUsage() {
+            var powerUsage = document.getElementById('power_usage').value;
+            feedback.power_usage = powerUsage;
+            document.getElementById('chat').innerHTML = `
+                <p>How satisfied are you with the machine's performance?</p>
+                <select id="satisfaction">
+                    <option value="Okay">Okay</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Good">Good</option>
+                </select>
+                <button onclick="submitSatisfaction()">Submit</button>
+            `;
+        }
+
+        function submitSatisfaction() {
+            var satisfaction = document.getElementById('satisfaction').value;
+            feedback.satisfaction = satisfaction;
+            document.getElementById('chat').innerHTML = `
+                <p>Report any safety incidents or near misses.</p>
+                <textarea id="safety_incidents"></textarea>
+                <button onclick="submitSafetyIncidents()">Submit</button>
+            `;
+        }
+
+        function submitSafetyIncidents() {
+            var safetyIncidents = document.getElementById('safety_incidents').value;
+            feedback.safety_incidents = safetyIncidents;
+            document.getElementById('chat').innerHTML = `
+                <p>How would you rate the machine's emissions? (1-10)</p>
+                <input type="number" id="emissions" min="1" max="10" />
+                <button onclick="submitEmissions()">Submit</button>
+            `;
+        }
+
+        function submitEmissions() {
+            var emissions = document.getElementById('emissions').value;
+            feedback.emissions = emissions;
+            document.getElementById('chat').innerHTML = `
+                <p>Any comments?</p>
+                <textarea id="comments"></textarea>
+                <button onclick="submitComments()">Submit</button>
+            `;
+        }
+
+        function submitComments() {
+            var comments = document.getElementById('comments').value;
+            feedback.comments = comments;
+            document.getElementById('chat').innerHTML = `
+                <p>Any downtimes experienced?</p>
+                <textarea id="downtime"></textarea>
+                <button onclick="submitDowntime()">Submit</button>
+            `;
+        }
+
+        function submitDowntime() {
+            var downtime = document.getElementById('downtime').value;
+            feedback.downtime = downtime;
+            document.getElementById('chat').innerHTML = `
+                <p>How user-friendly is the machine? (1-10)</p>
+                <input type="number" id="user_friendly" min="1" max="10" />
+                <button onclick="submitUserFriendly()">Submit</button>
+            `;
+        }
+
+        function submitUserFriendly() {
+            var userFriendly = document.getElementById('user_friendly').value;
+            feedback.user_friendly = userFriendly;
+            document.getElementById('chat').innerHTML = `
+                <p>How easy is it to train new operators? (1-10)</p>
+                <input type="number" id="training_ease" min="1" max="10" />
+                <button onclick="submitTrainingEase()">Submit</button>
+            `;
+        }
+
+        function submitTrainingEase() {
+            var trainingEase = document.getElementById('training_ease').value;
+            feedback.training_ease = trainingEase;
+            socket.emit('submit', feedback);
+            document.getElementById('chat').innerHTML = `
+                <p>Feedback submitted successfully!</p>
+                <a href="/export">Export to PDF</a>
+            `;
+        }
+
+        socket.on('response', function(data) {
+            if (data.status === 'complete') {
+                document.getElementById('chat').innerHTML = `
+                    <p>${data.message}</p>
+                    <a href="/export">Export to PDF</a>
+                `;
+            }
+        });
+    </script>
+    <div class="wrapper">
+        <h1>Machine Performance Feedback</h1>
+        <div id="chat"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', startChat);
+    </script>
+{% endblock %}
+

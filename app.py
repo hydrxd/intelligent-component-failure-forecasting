@@ -60,20 +60,29 @@ def articulated_truck():
         stat['Fuel_Temperature'] = "Warning"
 
         possible_breakdowns = ['Potential breakdown on day 5 due to Misc_Exhaust Gas Temparature: 222.3', 
-                               'Potential breakdown on day 8 due to Fuel_Temperature: 20']
+                               'Potential breakdown on day 5 due to Fuel_Temperature: 20']
         return render_template("articulated_truck.html",status=stat,possible_breakdowns=possible_breakdowns)
     
 @app.route("/analysis/asphalt_paver", methods=["GET"])
 def asphalt_paver():
     if (request.method == "GET"):
-        possible_breakdowns = ['Potential breakdown on day 5 due to Engine_temperature: 107', 
-                               'Potential breakdown on day 8 due to Engine_Oil Pressure: 23']
+
+        stat = status
+        stat['Engine_Temperature'] = "Warning"
+        stat['Engine_Oil Pressure'] = "Warning"
+        
+        possible_breakdowns = ['Potential breakdown on day 11 due to Engine_temperature: 107', 
+                               'Potential breakdown on day 11 due to Engine_Oil Pressure: 23']
         return render_template("asphalt_paver.html",status=status,possible_breakdowns=possible_breakdowns)
 
 @app.route("/analysis/backhoe_loader", methods=["GET"])
 def backhoe_loader():
     if (request.method == "GET"):
-        possible_breakdowns = ['Potential breakdown on day 8 due to System_Voltage: 15.4']
+
+        stat = status
+        stat['System_Voltage'] = "Warning"
+
+        possible_breakdowns = ['Potential breakdown on day 4 due to System_Voltage: 15.4']
         return render_template("backhoe_loader.html",status=status,possible_breakdowns=possible_breakdowns)
     
 @app.route("/analysis/dozer", methods=["GET"])

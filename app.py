@@ -16,6 +16,26 @@ import base64
 app = Flask(__name__)
 socketio = SocketIO(app)
 
+
+
+status = {
+    "Drive_Pedal Sensor": "Normal",
+    "Drive_Transmission Pressure": "Normal",
+    "Engine_Oil Pressure": "Normal",
+    "Engine_Speed": "Normal",
+    "Engine_Temparature": "Normal",
+    "Fuel_Level": "Normal",
+    "Fuel_Pressure": "Normal",
+    "Fuel_Water in Fuel": "Normal",
+    "Misc_Air Filter Pressure": "Normal",
+    "Misc_Exhaust Gas Temparature": "Normal",
+    "Misc_Hydraulic Pump Rate": "Normal",
+    "Misc_System Voltage": "Normal",
+    "Drive_Brake Control": "Normal",
+    "Fuel_Temparature": "Normal"
+}
+
+
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 app.permanent_session_lifetime = timedelta(minutes=30)
 
@@ -30,20 +50,31 @@ def analysis():
     if (request.method == "GET"):
         return render_template("analysis.html")
     
+
 @app.route("/analysis/articulated_truck", methods=["GET"])
 def articulated_truck():
     if (request.method == "GET"):
-        return render_template("articulated_truck.html")
+
+        stat = status
+        stat['Misc_Exhaust Gas Temperature'] = "Warning"
+        stat['Fuel_Temperature'] = "Warning"
+
+        possible_breakdowns = ['Potential breakdown on day 5 due to Misc_Exhaust Gas Temparature: 222.3', 
+                               'Potential breakdown on day 8 due to Fuel_Temperature: 20']
+        return render_template("articulated_truck.html",status=stat,possible_breakdowns=possible_breakdowns)
     
 @app.route("/analysis/asphalt_paver", methods=["GET"])
 def asphalt_paver():
     if (request.method == "GET"):
-        return render_template("asphalt_paver.html")
+        possible_breakdowns = ['Potential breakdown on day 5 due to Engine_temperature: 107', 
+                               'Potential breakdown on day 8 due to Engine_Oil Pressure: 23']
+        return render_template("asphalt_paver.html",status=status,possible_breakdowns=possible_breakdowns)
 
 @app.route("/analysis/backhoe_loader", methods=["GET"])
 def backhoe_loader():
     if (request.method == "GET"):
-        return render_template("backhoe_loader.html")
+        possible_breakdowns = ['Potential breakdown on day 8 due to System_Voltage: 15.4']
+        return render_template("backhoe_loader.html",status=status,possible_breakdowns=possible_breakdowns)
     
 @app.route("/analysis/dozer", methods=["GET"])
 def dozer():

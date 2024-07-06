@@ -1,0 +1,201 @@
+﻿Id,Date,Time,Machine,Component,Parameter,Value
+8,2022-05-01,19:51:35,Articulated_Truck_1,Engine,Speed,1600
+2,2022-05-02,07:24:10,Articulated_Truck_1,Drive,Transmission Pressure,220
+7,2022-05-02,15:33:29,Articulated_Truck_1,Fuel,Temparature,0
+49,2022-05-03,10:13:39,Articulated_Truck_1,Engine,Speed,1560
+49,2022-05-03,11:34:13,Articulated_Truck_1,Fuel,Pressure,49
+44,2022-05-04,03:09:21,Articulated_Truck_1,Misc,Air Filter Pressure,31
+45,2022-05-05,04:52:00,Articulated_Truck_1,Fuel,Pressure,44
+41,2022-05-05,09:59:11,Articulated_Truck_1,Engine,Speed,1700
+29,2022-05-06,09:45:34,Articulated_Truck_1,Fuel,Water in Fuel,119
+11,2022-05-06,16:01:26,Articulated_Truck_1,Misc,Hydraulic Pump Rate,110
+48,2022-05-06,18:11:27,Articulated_Truck_1,Fuel,Temparature,0
+11,2022-05-07,00:00:26,Articulated_Truck_1,Drive,Transmission Pressure,275
+50,2022-05-07,21:21:33,Articulated_Truck_1,Fuel,Water in Fuel,448
+45,2022-05-08,05:33:36,Articulated_Truck_1,Misc,System Voltage,14.9
+20,2022-05-08,17:09:11,Articulated_Truck_1,Engine,Oil Pressure,55
+35,2022-05-09,03:24:39,Articulated_Truck_1,Misc,Hydraulic Pump Rate,117
+38,2022-05-09,04:20:54,Articulated_Truck_1,Engine,Speed,1870
+39,2022-05-09,08:23:43,Articulated_Truck_1,Engine,Oil Pressure,46
+10,2022-05-09,09:14:01,Articulated_Truck_1,Engine,Speed,1800
+16,2022-05-09,14:21:51,Articulated_Truck_1,Drive,Pedal Sensor,3.6
+38,2022-05-09,18:52:55,Articulated_Truck_1,Drive,Brake Control,4
+33,2022-05-10,10:06:47,Articulated_Truck_1,Drive,Pedal Sensor,4.4
+36,2022-05-10,12:45:46,Articulated_Truck_1,Engine,Oil Pressure,45
+5,2022-05-12,02:05:42,Articulated_Truck_1,Fuel,Water in Fuel,70
+40,2022-05-12,04:55:54,Articulated_Truck_1,Misc,Air Filter Pressure,36
+1,2022-05-12,09:47:44,Articulated_Truck_1,Engine,Speed,1700
+20,2022-05-12,09:48:46,Articulated_Truck_1,Drive,Brake Control,5
+50,2022-05-12,19:31:46,Articulated_Truck_1,Drive,Transmission Pressure,391
+48,2022-05-13,05:10:04,Articulated_Truck_1,Drive,Brake Control,8
+34,2022-05-13,07:29:59,Articulated_Truck_1,Fuel,Pressure,71
+36,2022-05-13,11:20:36,Articulated_Truck_1,Misc,Air Filter Pressure,32
+10,2022-05-13,18:58:13,Articulated_Truck_1,Drive,Brake Control,7
+26,2022-05-13,19:45:09,Articulated_Truck_1,Engine,Temparature,98
+44,2022-05-15,18:00:32,Articulated_Truck_1,Engine,Oil Pressure,44
+2,2022-05-15,20:33:46,Articulated_Truck_1,Fuel,Level,10
+13,2022-05-15,22:24:54,Articulated_Truck_1,Engine,Temparature,90
+33,2022-05-16,02:16:40,Articulated_Truck_1,Fuel,Temparature,0
+8,2022-05-16,09:07:13,Articulated_Truck_1,Drive,Brake Control,8
+9,2022-05-16,22:24:02,Articulated_Truck_1,Misc,System Voltage,12.7
+28,2022-05-17,08:03:15,Articulated_Truck_1,Fuel,Pressure,59
+40,2022-05-18,20:27:16,Articulated_Truck_1,Engine,Temparature,100
+39,2022-05-18,20:38:30,Articulated_Truck_1,Fuel,Water in Fuel,184
+22,2022-05-19,02:06:43,Articulated_Truck_1,Fuel,Level,6
+40,2022-05-19,23:24:02,Articulated_Truck_1,Fuel,Level,7
+18,2022-05-20,06:13:45,Articulated_Truck_1,Drive,Brake Control,8
+44,2022-05-20,08:34:29,Articulated_Truck_1,Drive,Pedal Sensor,4.6
+19,2022-05-20,13:06:28,Articulated_Truck_1,Fuel,Temparature,0
+37,2022-05-20,18:34:35,Articulated_Truck_1,Engine,Temparature,92
+3,2022-05-20,20:12:30,Articulated_Truck_1,Drive,Pedal Sensor,4.2
+39,2022-05-20,22:52:31,Articulated_Truck_1,Drive,Pedal Sensor,3.8
+16,2022-05-21,01:03:05,Articulated_Truck_1,Misc,Air Filter Pressure,27
+46,2022-05-21,03:29:19,Articulated_Truck_1,Fuel,Water in Fuel,426
+4,2022-05-21,11:13:39,Articulated_Truck_1,Drive,Transmission Pressure,335
+41,2022-05-21,19:51:54,Articulated_Truck_1,Fuel,Level,6
+14,2022-05-21,20:03:16,Articulated_Truck_1,Misc,Exhaust Gas Temparature,265
+4,2022-05-21,23:07:40,Articulated_Truck_1,Fuel,Pressure,44
+40,2022-05-22,10:03:36,Articulated_Truck_1,Drive,Transmission Pressure,443
+43,2022-05-22,11:05:17,Articulated_Truck_1,Engine,Speed,1590
+30,2022-05-22,12:35:16,Articulated_Truck_1,Drive,Transmission Pressure,267
+25,2022-05-22,20:48:03,Articulated_Truck_1,Engine,Oil Pressure,45
+16,2022-05-23,01:33:32,Articulated_Truck_1,Engine,Speed,1455
+49,2022-05-23,02:47:05,Articulated_Truck_1,Misc,System Voltage,14.8
+15,2022-05-23,04:38:41,Articulated_Truck_1,Fuel,Temparature,0
+1,2022-05-23,10:00:10,Articulated_Truck_1,Misc,System Voltage,12.6
+50,2022-05-23,10:33:40,Articulated_Truck_1,Misc,Exhaust Gas Temparature,176
+17,2022-05-23,11:17:38,Articulated_Truck_1,Misc,System Voltage,14.4
+17,2022-05-23,23:09:11,Articulated_Truck_1,Engine,Oil Pressure,33
+13,2022-05-24,00:58:38,Articulated_Truck_1,Fuel,Water in Fuel,78
+50,2022-05-24,06:15:41,Articulated_Truck_1,Engine,Oil Pressure,65
+18,2022-05-25,00:20:39,Articulated_Truck_1,Misc,Exhaust Gas Temparature,240
+35,2022-05-25,10:00:04,Articulated_Truck_1,Drive,Pedal Sensor,3.6
+38,2022-05-25,11:32:37,Articulated_Truck_1,Fuel,Pressure,72
+17,2022-05-25,21:48:09,Articulated_Truck_1,Fuel,Water in Fuel,81
+9,2022-05-26,18:34:09,Articulated_Truck_1,Fuel,Water in Fuel,73
+27,2022-05-26,21:27:20,Articulated_Truck_1,Engine,Speed,1470
+49,2022-05-27,02:12:14,Articulated_Truck_1,Drive,Brake Control,4
+24,2022-05-27,06:25:04,Articulated_Truck_1,Engine,Temparature,104
+14,2022-05-27,17:18:06,Articulated_Truck_1,Engine,Oil Pressure,44
+34,2022-05-27,20:00:46,Articulated_Truck_1,Misc,Exhaust Gas Temparature,177
+23,2022-05-27,22:41:55,Articulated_Truck_1,Engine,Speed,1340
+13,2022-05-28,06:14:45,Articulated_Truck_1,Misc,System Voltage,14.1
+32,2022-05-28,10:16:16,Articulated_Truck_1,Misc,Air Filter Pressure,35
+47,2022-05-28,20:46:27,Articulated_Truck_1,Misc,Hydraulic Pump Rate,109
+7,2022-05-28,23:52:38,Articulated_Truck_1,Engine,Temparature,80
+30,2022-05-29,02:53:16,Articulated_Truck_1,Engine,Speed,1250
+43,2022-05-29,10:08:51,Articulated_Truck_1,Drive,Transmission Pressure,300
+21,2022-05-29,16:46:08,Articulated_Truck_1,Misc,System Voltage,14.7
+29,2022-05-29,23:47:59,Articulated_Truck_1,Drive,Brake Control,7
+35,2022-05-30,03:59:33,Articulated_Truck_1,Engine,Temparature,94
+18,2022-05-30,07:29:25,Articulated_Truck_1,Engine,Temparature,102
+47,2022-05-30,09:02:29,Articulated_Truck_1,Drive,Brake Control,2
+42,2022-05-30,10:48:15,Articulated_Truck_1,Fuel,Water in Fuel,424
+31,2022-05-30,21:58:48,Articulated_Truck_1,Engine,Oil Pressure,25
+5,2022-06-01,00:48:36,Articulated_Truck_1,Drive,Pedal Sensor,4.4
+48,2022-06-01,05:07:12,Articulated_Truck_1,Misc,Air Filter Pressure,35
+3,2022-06-01,18:55:45,Articulated_Truck_1,Engine,Oil Pressure,60
+2,2022-06-01,21:02:41,Articulated_Truck_1,Misc,Exhaust Gas Temparature,190
+34,2022-06-01,23:11:36,Articulated_Truck_1,Engine,Speed,1650
+39,2022-06-02,05:50:45,Articulated_Truck_1,Misc,Hydraulic Pump Rate,116
+21,2022-06-02,11:18:05,Articulated_Truck_1,Engine,Speed,1640
+8,2022-06-03,00:36:16,Articulated_Truck_1,Misc,Air Filter Pressure,23
+7,2022-06-03,19:01:05,Articulated_Truck_1,Drive,Pedal Sensor,3.9
+4,2022-06-03,21:24:15,Articulated_Truck_1,Engine,Temparature,78
+32,2022-06-04,06:36:55,Articulated_Truck_1,Engine,Speed,1550
+30,2022-06-04,22:21:26,Articulated_Truck_1,Fuel,Level,4
+3,2022-06-04,23:24:10,Articulated_Truck_1,Fuel,Temparature,0
+21,2022-06-05,00:55:51,Articulated_Truck_1,Fuel,Water in Fuel,88
+37,2022-06-05,04:17:27,Articulated_Truck_1,Misc,System Voltage,13.7
+35,2022-06-06,11:23:40,Articulated_Truck_1,Fuel,Water in Fuel,144
+26,2022-06-06,21:59:58,Articulated_Truck_1,Fuel,Level,5
+18,2022-06-07,02:38:27,Articulated_Truck_1,Fuel,Level,7
+28,2022-06-07,11:31:30,Articulated_Truck_1,Engine,Oil Pressure,36
+28,2022-06-07,12:07:56,Articulated_Truck_1,Misc,Air Filter Pressure,33
+24,2022-06-07,12:15:03,Articulated_Truck_1,Fuel,Pressure,56
+6,2022-06-07,14:19:48,Articulated_Truck_1,Fuel,Level,9
+37,2022-06-08,10:58:57,Articulated_Truck_1,Drive,Brake Control,8
+43,2022-06-08,17:13:22,Articulated_Truck_1,Misc,Hydraulic Pump Rate,106
+33,2022-06-09,00:16:29,Articulated_Truck_1,Engine,Oil Pressure,35
+26,2022-06-09,02:21:39,Articulated_Truck_1,Drive,Pedal Sensor,3.9
+20,2022-06-09,03:52:58,Articulated_Truck_1,Fuel,Pressure,62
+28,2022-06-09,05:23:13,Articulated_Truck_1,Drive,Brake Control,3
+2,2022-06-09,08:21:48,Articulated_Truck_1,Engine,Temparature,75
+1,2022-06-09,14:04:18,Articulated_Truck_1,Fuel,Water in Fuel,50
+8,2022-06-09,14:12:56,Articulated_Truck_1,Fuel,Pressure,46
+27,2022-06-09,15:48:46,Articulated_Truck_1,Fuel,Temparature,0
+23,2022-06-09,23:05:39,Articulated_Truck_1,Drive,Transmission Pressure,321
+46,2022-06-11,03:09:49,Articulated_Truck_1,Misc,Exhaust Gas Temparature,182
+38,2022-06-11,04:31:02,Articulated_Truck_1,Misc,Exhaust Gas Temparature,181
+45,2022-06-11,06:26:08,Articulated_Truck_1,Engine,Speed,1440
+46,2022-06-11,19:02:43,Articulated_Truck_1,Engine,Temparature,102
+31,2022-06-12,04:21:12,Articulated_Truck_1,Fuel,Water in Fuel,120
+21,2022-06-12,21:34:23,Articulated_Truck_1,Drive,Transmission Pressure,250
+13,2022-06-12,22:26:46,Articulated_Truck_1,Drive,Transmission Pressure,300
+12,2022-06-13,09:02:11,Articulated_Truck_1,Engine,Speed,1345
+31,2022-06-13,19:53:39,Articulated_Truck_1,Drive,Pedal Sensor,3.7
+24,2022-06-14,08:05:06,Articulated_Truck_1,Drive,Pedal Sensor,4.5
+48,2022-06-14,10:10:26,Articulated_Truck_1,Engine,Temparature,82
+15,2022-06-14,16:03:35,Articulated_Truck_1,Engine,Temparature,100
+32,2022-06-14,17:23:07,Articulated_Truck_1,Drive,Transmission Pressure,450
+25,2022-06-15,15:14:31,Articulated_Truck_1,Drive,Transmission Pressure,366
+20,2022-06-15,16:45:30,Articulated_Truck_1,Misc,Air Filter Pressure,29
+14,2022-06-16,00:37:05,Articulated_Truck_1,Drive,Pedal Sensor,4.4
+34,2022-06-16,01:32:34,Articulated_Truck_1,Drive,Transmission Pressure,447
+36,2022-06-16,10:52:41,Articulated_Truck_1,Fuel,Level,3
+23,2022-06-16,13:19:07,Articulated_Truck_1,Fuel,Temparature,0
+9,2022-06-16,18:04:01,Articulated_Truck_1,Drive,Brake Control,3
+42,2022-06-16,22:11:02,Articulated_Truck_1,Drive,Pedal Sensor,3.9
+10,2022-06-17,04:21:38,Articulated_Truck_1,Misc,Exhaust Gas Temparature,222
+17,2022-06-17,05:25:02,Articulated_Truck_1,Drive,Brake Control,2
+22,2022-06-17,17:06:13,Articulated_Truck_1,Drive,Pedal Sensor,3.6
+25,2022-06-17,23:54:14,Articulated_Truck_1,Misc,System Voltage,14.9
+9,2022-06-18,10:48:23,Articulated_Truck_1,Engine,Oil Pressure,64
+16,2022-06-18,10:52:44,Articulated_Truck_1,Fuel,Pressure,67
+33,2022-06-18,12:26:52,Articulated_Truck_1,Misc,System Voltage,15.1
+23,2022-06-18,19:07:58,Articulated_Truck_1,Misc,Hydraulic Pump Rate,123
+42,2022-06-19,03:02:05,Articulated_Truck_1,Misc,Exhaust Gas Temparature,176
+3,2022-06-19,04:00:29,Articulated_Truck_1,Misc,Hydraulic Pump Rate,115
+42,2022-06-19,08:39:27,Articulated_Truck_1,Engine,Oil Pressure,36
+14,2022-06-20,09:17:11,Articulated_Truck_1,Fuel,Level,9
+19,2022-06-20,13:46:58,Articulated_Truck_1,Engine,Speed,1650
+43,2022-06-20,17:33:12,Articulated_Truck_1,Fuel,Level,4
+22,2022-06-21,03:15:52,Articulated_Truck_1,Misc,Exhaust Gas Temparature,210
+41,2022-06-21,09:28:21,Articulated_Truck_1,Misc,System Voltage,15.2
+31,2022-06-21,14:37:28,Articulated_Truck_1,Misc,Hydraulic Pump Rate,118
+27,2022-06-21,17:17:53,Articulated_Truck_1,Drive,Brake Control,8
+6,2022-06-21,17:50:42,Articulated_Truck_1,Engine,Oil Pressure,67
+11,2022-06-21,18:05:54,Articulated_Truck_1,Engine,Oil Pressure,72
+47,2022-06-22,04:47:09,Articulated_Truck_1,Engine,Oil Pressure,56
+29,2022-06-22,14:04:56,Articulated_Truck_1,Misc,System Voltage,13.3
+44,2022-06-22,19:24:57,Articulated_Truck_1,Fuel,Temparature,0
+30,2022-06-22,23:36:06,Articulated_Truck_1,Misc,Exhaust Gas Temparature,180
+12,2022-06-23,00:10:54,Articulated_Truck_1,Drive,Pedal Sensor,3.7
+26,2022-06-23,00:44:20,Articulated_Truck_1,Misc,Exhaust Gas Temparature,190
+41,2022-06-23,02:41:50,Articulated_Truck_1,Drive,Transmission Pressure,377
+29,2022-06-23,10:50:01,Articulated_Truck_1,Engine,Temparature,95
+5,2022-06-23,11:02:43,Articulated_Truck_1,Engine,Speed,1750
+5,2022-06-23,20:53:35,Articulated_Truck_1,Misc,System Voltage,13.1
+24,2022-06-23,23:45:21,Articulated_Truck_1,Misc,Air Filter Pressure,31
+4,2022-06-23,23:50:43,Articulated_Truck_1,Misc,Air Filter Pressure,22
+19,2022-06-24,02:03:36,Articulated_Truck_1,Drive,Brake Control,4
+10,2022-06-24,09:38:45,Articulated_Truck_1,Fuel,Level,9
+46,2022-06-24,18:48:40,Articulated_Truck_1,Drive,Pedal Sensor,3.2
+12,2022-06-25,08:18:50,Articulated_Truck_1,Misc,Air Filter Pressure,25
+22,2022-06-25,20:18:23,Articulated_Truck_1,Engine,Oil Pressure,65
+36,2022-06-26,04:53:04,Articulated_Truck_1,Drive,Brake Control,2
+45,2022-06-26,05:57:26,Articulated_Truck_1,Drive,Transmission Pressure,369
+47,2022-06-26,11:13:01,Articulated_Truck_1,Fuel,Level,3
+37,2022-06-27,00:30:42,Articulated_Truck_1,Fuel,Temparature,0
+27,2022-06-27,14:43:40,Articulated_Truck_1,Misc,Hydraulic Pump Rate,119
+1,2022-06-28,01:17:39,Articulated_Truck_1,Drive,Brake Control,2
+11,2022-06-28,19:18:20,Articulated_Truck_1,Fuel,Temparature,0
+15,2022-06-29,01:08:01,Articulated_Truck_1,Drive,Transmission Pressure,337
+6,2022-06-29,02:58:38,Articulated_Truck_1,Drive,Transmission Pressure,375
+12,2022-06-29,13:37:42,Articulated_Truck_1,Fuel,Pressure,56
+6,2022-06-29,14:50:21,Articulated_Truck_1,Misc,Exhaust Gas Temparature,210
+7,2022-06-29,21:21:13,Articulated_Truck_1,Misc,Hydraulic Pump Rate,118
+32,2022-06-30,11:08:46,Articulated_Truck_1,Fuel,Level,4
+15,2022-06-30,13:37:33,Articulated_Truck_1,Misc,Hydraulic Pump Rate,120
+19,2022-06-30,18:55:06,Articulated_Truck_1,Misc,Hydraulic Pump Rate,122
+25,2022-06-30,22:11:36,Articulated_Truck_1,Fuel,Water in Fuel,112

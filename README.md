@@ -29,7 +29,7 @@ LSTM models are particularly useful for predicting machine failures.<br><br>
 Clone the project
 
 ```bash
-  git clone https://github.com/lohithgsk/intelligent-component-failure-forecasting.git
+  git clone https://github.com/hydrxd/intelligent-component-failure-forecasting.git
 ```
 
 Go to the project directory
